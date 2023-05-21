@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
   app.get('/food/:id', (req, res) => {
     const id = req.params.id;
     console.log(id);
-    const selectedFood = news.find(n => n._id === id);
+    const selectedFood = food.find(n => n._id === id);
     res.send(selectedFood)
   })
   app.get('/categories/:id', (req, res) => {
